@@ -87,8 +87,8 @@ def build_macro_dashboard(factors_df, returns_df,
     return summary
 
 
-factors_df = pd.read_csv('macro_factors.csv', index_col=0, parse_dates=True)
-returns_df = pd.read_csv('asset_returns.csv', index_col=0, parse_dates=True)
+factors_df = pd.read_csv('factors_14-23_monthly.csv', index_col=0, parse_dates=True)
+returns_df = pd.read_csv('SPX_14-23_monthly.csv', index_col=0, parse_dates=True)
 
 dash = build_macro_dashboard(factors_df, returns_df,
                               factor_name='usd_index',
